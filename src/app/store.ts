@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit"
-import { type } from "os"
+import reservationsReducer from "../features/reservationSlice"
 
 export const store = configureStore({
     reducer:{
-
+        reservations : reservationsReducer,
     }
 })
 
